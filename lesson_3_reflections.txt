@@ -1,29 +1,33 @@
-When would you want to use a remote repository rather than keeping all your work
-local?
+When would you want to use a remote repository rather than keeping all your work local?
 
-    Fill in your answer here
+    当和团队一起工作，或是经常在不同的地点工作的时候。
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    自动更新可能会造成一些困扰，比如多人合作时本地工作进程还没准备好和远程合并。
+或者我只是想在本地提交到一定阶段再在远程发布我的版本，而不是提交一次就发布一次。
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    forks:把别人的项目复制到自己的仓库。无权更改他人项目或想搞自己版本的时候使用。
+    clones:把远程的项目拷贝到本地，能拷贝自己或是他人的，但是push这个版本到他人的仓库需要权限。在基于远程新建一个项目时使用。
+    branches:在一个项目中新建分支，单位是项目本身。在一个项目中做比较独特的修改时使用。
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    这样可以使项目看起来像一个整体。
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    不使用git或github就只能人工协调，约定一个初始版本，把所有人的修改文件都提交到组长手下，再逐个解决冲突，再合并。
+    很显然使用git和github会轻松许多。
 
-When would you want to make changes in a separate branch rather than directly in
-master?  What benefits does each approach have?
+When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
 
-    Fill in your answer here
+    在更改某一样基本属性，或添加某个特性的时候会添加分支。
+    在独立分支中修改可以使分支的功能完全以后再和master合并。利于团队合作开发不同的模块，或者是不同的版本。
+    直接修改master意味着本体发生改变，就好像基础版本提升，可以作为一次版本升级。
